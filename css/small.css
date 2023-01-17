@@ -1,16 +1,59 @@
-::para {
+/*fonts*/
+
+p {
   font-family: "Bodoni Moda", serif;
+  color:antiquewhite
 }
-::heading1 {
+h2 {
   font-family: "Lobster", cursive;
 }
-::heading2 {
+h1 {
   font-family: "Playball", cursive;
+  font-size: clamp(2rem, 2vmin, 2.5rem);
 }
 body {
   background-color: #333;
   padding: 1.25em; /* 20 */
 }
+/*font-family: aviano,serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: aviano,serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: desire-pro,serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: adorn-garland,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: adorn-garland,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: 'Rufina', serif;
+
+font-family: coranto-2,serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: coranto-2,serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: coranto-2,serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: coranto-2-headline,serif;
+font-weight: 700;
+font-style: normal;
+*/
+
 /* Small/Phone View ***************/
 nav {
   margin: 0 auto;
@@ -39,7 +82,7 @@ nav {
 }
 
 .navigation a.ham::before {
-  content: "&#x2630";
+  content: "";
 }
 
 .navigation a:hover {
