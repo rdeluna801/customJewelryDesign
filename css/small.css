@@ -1,58 +1,18 @@
-/*fonts*/
+:root {
+  --para: "Bodoni Moda", serif;
+  --head2: "Lobster", cursive;
+  --head1: "Playball", cursive;
+  --para2: "Rufina", serif;
+  --para3: "coranto-2", serif;
+  --head3: "adorn-garland", sans-serif;
+  --head4: "aviano", serif;
+  --head5: "desire-pro", serif;
+}
 
-p {
-  font-family: "Bodoni Moda", serif;
-  color:antiquewhite
-}
-h2 {
-  font-family: "Lobster", cursive;
-}
-h1 {
-  font-family: "Playball", cursive;
-  font-size: clamp(2rem, 2vmin, 2.5rem);
-}
 body {
-  background-color: #333;
+  background-color: rgb(24, 22, 65);
   padding: 1.25em; /* 20 */
 }
-/*font-family: aviano,serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: aviano,serif;
-font-weight: 700;
-font-style: normal;
-
-font-family: desire-pro,serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: adorn-garland,sans-serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: adorn-garland,sans-serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: 'Rufina', serif;
-
-font-family: coranto-2,serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: coranto-2,serif;
-font-weight: 400;
-font-style: italic;
-
-font-family: coranto-2,serif;
-font-weight: 700;
-font-style: normal;
-
-font-family: coranto-2-headline,serif;
-font-weight: 700;
-font-style: normal;
-*/
 
 /* Small/Phone View ***************/
 nav {
@@ -75,10 +35,12 @@ nav {
   padding: 0.75rem;
   text-align: left;
   text-decoration: none;
+  text-shadow: 1px 1px 2px black; /* offset-x | offset-y | blur-radius | color */
   color: white;
   font-weight: 700;
   transition: 0.5s;
   font-size: clamp(1rem, 2vmin, 1.5rem);
+  font-family: var(--head5);
 }
 
 .navigation a.ham::before {
@@ -87,7 +49,7 @@ nav {
 
 .navigation a:hover {
   color: white;
-  background-color: navy;
+  background-color: rgb(3, 3, 46);
 }
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
@@ -100,6 +62,30 @@ nav {
 .responsive a.ham::before {
   content: "❌ ";
 }
-
-
+h1 {
+  font-family: var(--head3);
+  font-size: clamp(1.75rem, 2vmin, 2.5rem);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  text-shadow: 1px 1px 2px rgb(66, 64, 64);
+}
+h2 {
+  font-family: var(--head1);
+  font-size: clamp(1.5rem, 2vmin, 2rem);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  text-shadow: 1px 1px 2px rgb(66, 64, 64);
+}
+p {
+  font-family: var(--para);
+  font-size: clamp(1rem, 2vmin, 1.75rem);
+  color: white;
+  text-align: center;
+  margin: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
