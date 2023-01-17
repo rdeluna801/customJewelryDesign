@@ -13,8 +13,7 @@
   .navigation li:first-child {
     display: none;
   }
-  body {
-    display: flex;
-    flex-direction: column;
+  nav ul li a {
+    font-size: 3.5rem;
   }
 }
