@@ -2,6 +2,7 @@
 @media only screen and (min-width: 32.5em) {
   .navigation {
     display: flex;
+    box-shadow: black 5px 5px 5px;
   }
   .navigation li {
     display: block; /* change state in small view */
@@ -20,5 +21,36 @@
   }
   h2 {
     font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+    font-family: var(--head1);
+    color: aliceblue;
+  }
+  .custom,
+  .hero,
+  .services,
+  .products,
+  .productGallery,
+  .customOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(30, 30, 99);
+    border-color: black;
+    margin: 20px;
+    box-shadow: black 5px 5px 5px;
+  }
+  .linksIndex {
+    text-decoration: none;
+    color: rgb(189, 232, 242);
+    font-weight: bold;
+    font-family: var(--para3);
+  }
+  p {
+    font-size: 1.25rem;
+    color: rgb(244, 248, 249);
+    font-family: var(--para3);
   }
 }
