@@ -32,7 +32,8 @@
   .services,
   .products,
   .productGallery,
-  .customOrder {
+  .customOrder,
+  .customOrderForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,5 +53,29 @@
     font-size: 1.25rem;
     color: rgb(244, 248, 249);
     font-family: var(--para3);
+  }
+  form label {
+    font-size: 1.25rem;
+    color: rgb(244, 248, 249);
+    font-family: var(--para3);
+  }
+  .orderForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    margin: 20px;
+    align-items: center;
+    justify-items: start;
+  }
+  form.orderForm label {
+    grid-column-span: 1/2;
+    padding: 5px;
+  }
+  form.orderForm input#fname,
+  input#lname,
+  input#email {
+    grid-column-span: 2/3;
+    padding: 2px;
   }
 }
