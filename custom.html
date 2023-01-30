@@ -65,21 +65,33 @@
       <section class="customOrderForm">
         <h2>Custom Order Form</h2>
         <h3>Fill out the form below to get started</h3>
-      <form class="orderForm">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname">
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname">
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
+      <form class="orderForm" action="#" autocomplete="on">
        
+        <fieldset class="yourInfo">
+          <legend>Your Information:</legend>
+          <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required autofocus>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </fieldset>
         
-        <label id="customOrder" for="customOrder">Custom Order</label>
+       
+        <fieldset class="orderType">
+          <legend>Order Type:</legend>
+          <label id="customOrder" for="customOrder">Custom Order</label>
         <input type="checkbox" id="customOrder" name="customOrder" value="customOrder">
-        
         <label id="repair" for="repair">Repair</label>
         <input type="checkbox" id="repair" name="repair" value="repair">
+      </fieldset>
+        
+      <fieldset class="addInfo">
+          <legend>Additional information:</legend>
+          <textarea name="message" rows="10" cols="40">Optional details you would like to mention before we contact you goes here:</textarea>
         <input type="submit" value="Submit">
+      </fieldset>
+        
       </form>
      </section>
     </body>

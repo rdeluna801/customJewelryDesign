@@ -54,28 +54,47 @@
     color: rgb(244, 248, 249);
     font-family: var(--para3);
   }
-  form label {
-    font-size: 1.25rem;
-    color: rgb(244, 248, 249);
-    font-family: var(--para3);
-  }
   .orderForm {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     margin: 20px;
-    align-items: center;
-    justify-items: start;
   }
-  form.orderForm label {
-    grid-column-span: 1/2;
+  .yourInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 20px;
+    color: aliceblue;
+    font-family: var(--para3);
+  }
+  .yourInfo label {
     padding: 5px;
   }
-  form.orderForm input#fname,
-  input#lname,
-  input#email {
-    grid-column-span: 2/3;
-    padding: 2px;
+  .orderType {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 20px;
+    color: aliceblue;
+    font-family: var(--para3);
+  }
+  .orderType label {
+    padding: 5px;
+    margin: 10px;
+  }
+  .addInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 20px;
+    color: aliceblue;
+    font-family: var(--para3);
+  }
+  legend {
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-family: var(--para3);
+    padding: 5px;
   }
 }
